@@ -2,8 +2,7 @@ import React from 'react'
 
 function About() {
   return (
-    <div>About hola
-      
+    <div>about this complaint system 
     </div>
   )
 }
