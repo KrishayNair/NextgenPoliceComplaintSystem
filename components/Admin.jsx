@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button';
 import { useContract, useContractRead, useContractWrite } from "@thirdweb-dev/react";
 
 const Getter = () => {
@@ -67,7 +68,8 @@ const Getter = () => {
             <div className='getter-card md:m-5'>
                 <p className='getter-card-title'>Pending Approvals</p>
                 <div className='flex items-center mt-3'>
-                    <button className="button-common hover:bg-blue-900" onClick={getPendingApprovals}>Next Pending Approval ID</button>
+                   
+                    <Button variant="light" className="mb-6" onClick={getPendingApprovals}>Next Pending Approval ID</Button>
                     {
                         pendingApprovals && (
                             <p className='getter-card-number'>: {pendingApprovals.toString()}</p>
@@ -77,24 +79,26 @@ const Getter = () => {
 
                 <div className='md:flex items-center'>
                     <p className='text-2xl font-semibold'>Complaint Id: </p>
-                    <input type="number" className='p-1 m-1 md:w-[500px] w-[200px] rounded-sm bg-[#D2DAFF]' placeholder='Enter Id Here'
+                    <input type="number" className='p-1 m-1 md:w-[500px] w-[200px] rounded-sm bg-[#fff]' placeholder='Enter Id Here'
                         onChange={(e) => { setId(e.target.value) }} />
                 </div>
                 <div className='md:flex items-center'>
                     <p className='text-2xl font-semibold'>Your Remark: </p>
-                    <input type="text" className='p-1 m-1 md:w-[500px] w-[200px] rounded-sm bg-[#D2DAFF]' placeholder='Enter Remark Here'
+                    <input type="text" className='p-1 m-1 md:w-[500px] w-[200px] rounded-sm bg-[#fff]' placeholder='Enter Remark Here'
                         onChange={(e) => { setARemark(e.target.value) }} />
                 </div>
                 <div className='flex'>
-                    <button className="button-common hover:bg-blue-900" onClick={handleApproveComplaint}>Approve Complaint</button>
-                    <button className="button-common hover:bg-blue-900" onClick={handleDeclineComplaint}>Decline Complaint</button>
+                    
+                    <Button variant="light" onClick={handleApproveComplaint}>Approve Complaint</Button>
+                    <Button variant="light" className='ml-10' onClick={handleDeclineComplaint}>Decline Complaint</Button>
                 </div>
 
             </div>
             <div className='getter-card md:m-5'>
                 <p className='getter-card-title'>Pending Resolutions</p>
                 <div className='flex items-center mt-3'>
-                    <button className="button-common hover:bg-blue-900" onClick={getPendingResolutions}>Next Pending Resolution ID</button>
+                    
+                    <Button variant="light" className="mb-6" onClick={getPendingResolutions}>Next Pending Resolution ID</Button>
                     {
                         pendingResolutions && (
                             <p className='getter-card-number'>: {pendingResolutions.toString()}</p>
@@ -113,7 +117,7 @@ const Getter = () => {
                     <input type="text" className='getter-input md:w-[500px]' placeholder='Enter Remark Here'
                         onChange={(e) => { setRRemark(e.target.value) }} />
                 </div>
-                <button className="button-common hover:bg-blue-900" onClick={handleResolveComplaint}>Resolve Complaint</button>
+                <Button variant="light" className="mb-6" onClick={handleResolveComplaint}>Resolve Complaint</Button>
             </div>
 
         </div>

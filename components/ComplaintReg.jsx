@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useContract, useContractRead, useContractWrite } from "@thirdweb-dev/react";
+import styles from "./ComplaintReg.module.css"
+import Button from 'react-bootstrap/Button';
 import toast from "react-hot-toast";
 
 const ComplaintReg = () => {
@@ -33,15 +35,16 @@ const ComplaintReg = () => {
             <p className="complaint-title-red">File Your Complaint Here:</p>
             <div className='md:flex items-center'>
                 <p className='complaint-text-margin'>Title: </p>
-                <input type="text" className='container-input md:w-[500px] w-[300px]' placeholder='Enter Title Here'
+                <input type="text" className='container-input1 md:w-[500px] w-[300px]' placeholder='Enter Title Here'
                     onChange={(e) => { setTitle(e.target.value) }} />
             </div>
             <div className='md:flex items-center'>
                 <p className='complaint-text-normal'>Description: </p>
-                <input type="text" className='container-input md:w-[500px] w-[300px]' placeholder='Enter Description Here'
+                <input type="text" className='container-input2 md:w-[500px] w-[300px]' placeholder='Enter Description Here'
                     onChange={(e) => { setDescription(e.target.value) }} />
             </div>
-            <button className="button-common hover:bg-blue-900" onClick={handleComplaint}>File Complaint</button>
+            {/* <button className="button-common hover:bg-blue-900" onClick={handleComplaint}>File Complaint</button> */}
+            <Button onClick={handleComplaint} className={styles.submitBtn} variant="light">File Complaint</Button>
         </div>
     )
 }

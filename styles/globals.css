@@ -17,19 +17,19 @@ body {
   }
 
   .complaint-container {
-    @apply flex flex-col items-center justify-center bg-[#AAC4FF] mt-7 ml-5 rounded-xl border border-b-gray-800;
+    @apply flex flex-col h-96 items-center justify-center bg-gradient-to-r from-blue-500 to-cyan-500 mt-7 ml-5 rounded-xl border border-b-gray-800;
   }
 
   .complaint-title-red {
-    @apply text-3xl font-bold p-1 mb-4 underline animate-pulse text-red-700;
+    @apply text-5xl font-bold p-1 mb-16  animate-pulse text-white;
   }
 
   .complaint-text-margin {
-    @apply text-2xl font-semibold mr-[75px];
+    @apply text-4xl font-semibold mr-[75px] text-white;
   }
 
   .complaint-text-normal {
-    @apply text-2xl font-semibold;
+    @apply text-4xl font-semibold mr-44 text-white;
   }
 
   .status-container {
@@ -37,55 +37,58 @@ body {
   }
 
   .status {
-    @apply text-center m-2 p-1 bg-[#AAC4FF] rounded-lg border border-b-gray-800;
+    @apply text-center mt-20 m-2 p-1  bg-[#532cad] rounded-lg border border-b-gray-800;
   }
 
   .status-title {
-    @apply text-3xl font-bold p-1 mb-4 underline;
+    @apply text-2xl font-bold p-1 mb-4 text-white;
   }
 
   .status-text {
-    @apply text-2xl font-semibold m-1;
+    @apply text-2xl font-semibold m-1 text-white;
   }
 
   .status-input {
-    @apply p-1 m-1 w-[200px] rounded-sm bg-[#D2DAFF];
+    @apply p-1 m-1 w-[200px] rounded-sm bg-[#fff];
   }
 
   .status-render-container {
-    @apply w-[450px] bg-[#AAC4FF] rounded-lg border border-b-gray-800;
+    @apply w-[450px] bg-[#532cad] rounded-lg border border-b-gray-800;
   }
 
   .status-render-title {
-    @apply text-2xl font-bold p-1 mb-4 underline text-center;
+    @apply text-2xl font-bold p-1 mb-4 underline text-center text-white;
   }
 
   .status-render-text {
-    @apply font-semibold ml-2;
+    @apply font-semibold ml-2 text-white;
   }
 
-  .container-input {
-    @apply p-1 m-1 rounded-sm bg-[#D2DAFF];
+  .container-input1 {
+    @apply p-1 m-1 relative right-12 rounded-sm bg-[#fff];
+  }
+  .container-input2 {
+    @apply p-1 m-1 relative right-40 rounded-sm bg-[#fff];
   }
 
   .getter-container {
-    @apply flex flex-col justify-between p-[5px] m-2 bg-[#A3C7D6] rounded-lg;
+    @apply flex flex-col justify-between p-[5px] m-2  rounded-lg text-white;
   }
 
   .getter-card {
-    @apply flex flex-col border w-full items-center pb-2 bg-[#AAC4FF] rounded-lg;
+    @apply flex flex-col border w-full items-center pb-1 bg-[#532cad] rounded-lg;
   }
 
   .getter-card-title {
-    @apply p-2 font-semibold text-2xl;
+    @apply p-2 font-semibold text-2xl text-white;
   }
 
   .getter-card-number {
-    @apply pb-2 text-xl font-semibold;
+    @apply pb-2 text-xl font-semibold text-white;
   }
 
   .getter-input {
-    @apply p-1 m-1 w-[200px] rounded-sm bg-[#D2DAFF];
+    @apply p-1 m-1 w-[200px] rounded-sm bg-[#fff];
   }
 
   .button-common {

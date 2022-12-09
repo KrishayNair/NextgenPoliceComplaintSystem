@@ -1,7 +1,8 @@
 import React from 'react'
-import Status from './components/Status'
-import Admin from "./components/Admin"
-import Header from './components/Header';
+import Status from '/components/Status'
+import Admin from "/components/Admin"
+import Header from '/components/Header';
+import styles from "./StatusCheck.module.css"
 import { useAddress, useContract, useContractRead } from "@thirdweb-dev/react";
 import Head from 'next/head';
 function StatusCheck() {
@@ -11,7 +12,7 @@ function StatusCheck() {
   const { data: officer } = useContractRead(contract, "officer");
 
   return (
-    <div>
+    <div className={styles.mainDiv}>
       <Header/>
       <Status/>
       {officer === address && <Admin />}
