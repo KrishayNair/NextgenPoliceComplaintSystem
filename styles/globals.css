@@ -49,7 +49,7 @@ body {
   }
 
   .status-input {
-    @apply p-1 m-1 w-[200px] rounded-sm bg-[#fff];
+    @apply p-1 m-1 w-[200px] rounded-sm text-black bg-[#fff];
   }
 
   .status-render-container {
@@ -65,10 +65,10 @@ body {
   }
 
   .container-input1 {
-    @apply p-1 m-1 relative right-12 rounded-sm bg-[#fff];
+    @apply p-1 m-1 relative right-12 rounded-sm text-black bg-[#fff];
   }
   .container-input2 {
-    @apply p-1 m-1 relative right-40 rounded-sm bg-[#fff];
+    @apply p-1 m-1 relative right-40 rounded-sm text-black bg-[#fff];
   }
 
   .getter-container {
@@ -88,7 +88,7 @@ body {
   }
 
   .getter-input {
-    @apply p-1 m-1 w-[200px] rounded-sm bg-[#fff];
+    @apply p-1 m-1 w-[200px] rounded-sm text-black bg-[#fff];
   }
 
   .button-common {
