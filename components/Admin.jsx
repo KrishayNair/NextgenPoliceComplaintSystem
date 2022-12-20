@@ -79,12 +79,12 @@ const Getter = () => {
 
                 <div className='md:flex items-center'>
                     <p className='text-2xl font-semibold'>Complaint Id: </p>
-                    <input type="number" className='p-1 m-1 md:w-[500px] w-[200px] rounded-sm bg-[#fff]' placeholder='Enter Id Here'
+                    <input type="number" className='p-1 m-1 md:w-[500px] w-[200px] text-black rounded-sm bg-[#fff]' placeholder='Enter Id Here'
                         onChange={(e) => { setId(e.target.value) }} />
                 </div>
                 <div className='md:flex items-center'>
                     <p className='text-2xl font-semibold'>Your Remark: </p>
-                    <input type="text" className='p-1 m-1 md:w-[500px] w-[200px] rounded-sm bg-[#fff]' placeholder='Enter Remark Here'
+                    <input type="text" className='p-1 m-1 md:w-[500px] w-[200px] text-black rounded-sm bg-[#fff]' placeholder='Enter Remark Here'
                         onChange={(e) => { setARemark(e.target.value) }} />
                 </div>
                 <div className='flex'>
@@ -109,12 +109,12 @@ const Getter = () => {
 
                 <div className='md:flex items-center'>
                     <p className='text-2xl font-semibold'>Complaint Id: </p>
-                    <input type="number" className='getter-input md:w-[500px]' placeholder='Enter Id Here'
+                    <input type="number" className='getter-input  text-black md:w-[500px]' placeholder='Enter Id Here'
                         onChange={(e) => { setRId(e.target.value) }} />
                 </div>
                 <div className='md:flex items-center'>
                     <p className='text-2xl font-semibold'>Your Remark: </p>
-                    <input type="text" className='getter-input md:w-[500px]' placeholder='Enter Remark Here'
+                    <input type="text" className='getter-input text-black md:w-[500px]' placeholder='Enter Remark Here'
                         onChange={(e) => { setRRemark(e.target.value) }} />
                 </div>
                 <Button variant="light" className="mb-6" onClick={handleResolveComplaint}>Resolve Complaint</Button>
