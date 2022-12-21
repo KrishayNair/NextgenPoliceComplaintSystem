@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&display=swap");
 .contentDiv {
   width: 100vw;
   height: 100vh;
@@ -8,7 +9,7 @@
   width: 40rem;
   position: relative;
   left: 55rem;
-  bottom: 6rem;
+  bottom: 14rem;
 }
 .tagline {
   width: 50rem;
@@ -26,11 +27,14 @@
   color: white;
   background-color: #532cad;
   border: none;
+  width: 12rem;
+  height: 4rem;
 }
 .contentBtn2 {
   position: relative;
   top: 4rem;
-  width: 10rem;
+  width: 12rem;
+  height: 4rem;
   left: 20rem;
   color: white;
   background-color: #532cad;
@@ -41,4 +45,10 @@
   background: linear-gradient(90deg, #532cad 21.48%, #69e1f9 86.58%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  font-family: "Poppins";
+}
+.subHeading {
+  font-family: "Poppins";
+  font-size: 20px;
+  color: #69e1f9;
 }
