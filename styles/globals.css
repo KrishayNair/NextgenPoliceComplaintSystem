@@ -31,6 +31,9 @@ body {
   .complaint-text-normal {
     @apply text-4xl font-semibold mr-44 text-white;
   }
+  .complaint-text-normal2 {
+    @apply text-4xl relative right-8 font-semibold mr-44 text-white;
+  }
 
   .status-container {
     @apply flex flex-col justify-center items-center;
@@ -69,6 +72,9 @@ body {
   }
   .container-input2 {
     @apply p-1 m-1 relative right-40 rounded-sm text-black bg-[#fff];
+  }
+  .container-input3 {
+    @apply p-1 m-1 relative right-48 rounded-sm text-black bg-[#fff];
   }
 
   .getter-container {

@@ -7,6 +7,7 @@ import toast from "react-hot-toast";
 const ComplaintReg = () => {
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
+    const [contact, setContact] = useState("");
 
     const { contract } = useContract(process.env.NEXT_PUBLIC_SMART_CONTRACT);
     const { data: nextId } = useContractRead(contract, "nextId")
@@ -15,7 +16,7 @@ const ComplaintReg = () => {
     const handleComplaint = async () => {
         const notification = toast.loading("Filing Complaint");
         try {
-            const data = await fileComplaint([title, description]);
+            const data = await fileComplaint([title, description,contact]);
             toast.success(`Complaint Filed! Note Your ComplaintId:${nextId}`, {
                 id: notification,
             });
@@ -42,6 +43,11 @@ const ComplaintReg = () => {
                 <p className='complaint-text-normal'>Description: </p>
                 <input type="text" className='container-input2 md:w-[500px] w-[300px]' placeholder='Enter Description Here'
                     onChange={(e) => { setDescription(e.target.value) }} />
+            </div>
+            <div className='md:flex items-center'>
+                <p className='complaint-text-normal2'>Contact Details: </p>
+                <input type="text" className='container-input3 md:w-[500px] w-[300px]' placeholder='Enter Mobile No / Email ID Here'
+                    onChange={(e) => { setContact(e.target.value) }} />
             </div>
             {/* <button className="button-common hover:bg-blue-900" onClick={handleComplaint}>File Complaint</button> */}
             <Button onClick={handleComplaint} className={styles.submitBtn} variant="light">File Complaint</Button>
