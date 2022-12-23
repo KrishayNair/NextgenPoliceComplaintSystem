@@ -7,6 +7,7 @@ import Header from "/components/Header";
 import Status from "/components/Status";
 import styles from "./index.module.css";
 import Features from "/components/features";
+import FaqQuestions from "/components/faqQuestions";
 import { useAddress, useContract, useContractRead } from "@thirdweb-dev/react";
 
 export default function Home() {
@@ -29,19 +30,26 @@ export default function Home() {
             "Secure, Transparent, and Accountable"
           </h2>
           <p className={styles.subHeading}>
-            a police complaint system for the 21st century. Making justice
+            A police complaint system for the 21st century. Making justice
             accessible and transparent through the power of the blockchain.
           </p>
-          <Button className={styles.contentBtn1} variant="light">
-            Register Complaint
-          </Button>
-          <Button className={styles.contentBtn2} variant="light">
-            Check status
-          </Button>
+          <Link href="/Complaint">
+            <Button className={styles.contentBtn1} variant="light">
+              Register Complaint
+            </Button>
+          </Link>
+          <Link href="/StatusCheck">
+            <Button className={styles.contentBtn2} variant="light">
+              Check status
+            </Button>
+          </Link>
         </div>
         <img className={styles.mainImg} src="/mainImg2.png" alt="" />
       </div>
       <Features />
+      <div className={styles.faq}>
+        <FaqQuestions />
+      </div>
     </div>
   );
 }

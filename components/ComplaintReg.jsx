@@ -23,6 +23,7 @@ const ComplaintReg = () => {
             console.info("contract call successs", data);
             setTitle("");
             setDescription("");
+            setContact("")
         } catch (err) {
             toast.error("Whoops, something went wrong!", {
                 id: notification,
