@@ -74,18 +74,12 @@ import React, { useState } from 'react';
                 <div className="row">
                   <div className="contact-leftside col-12 col-lg-5">
                     <h1 className="main-heading fw-bold">
-                      Connect With Our <br /> Sales Team.
+                      CONTACT US
                     </h1>
                     <p className="main-hero-para">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Deserunt eaque alias similique.
+                    This site shall lodge the online complaint. Your complaint shall be referred to the concerned Police Station, where you may be called for further clarification and/or to give statement.
                     </p>
                     <figure>
-                      <img
-                        src="./images/hero1.jpg"
-                        alt="contatUsImg"
-                        className="img-fluid"
-                      />
                     </figure>
                   </div>
   
@@ -177,7 +171,7 @@ import React, { useState } from 'react';
                         <label
                           class="form-check-label"
                           className="main-hero-para">
-                          I agree that the thapatechnicalpay may contact me at the
+                          I agree that the police department may contact me at the
                           email address or phone number above
                         </label>
                       </div>
