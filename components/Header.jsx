@@ -13,12 +13,18 @@ const Header = () => {
           <Link className={styles.navElement} href="/">
           <Button variant="light">Home</Button>
           </Link>
+          <Link className={styles.navElement} href="/About">
+          <Button variant="light">About</Button>
+          </Link>
           
           <Link className={styles.navElement} href="/Complaint">
           <Button variant="light">Register Complaint</Button>
           </Link>
           <Link className={styles.navElement} href="/StatusCheck">
           <Button variant="light">Check status</Button>
+          </Link>
+          <Link className={styles.navElement} href="/Contact">
+          <Button variant="light">Contact Us</Button>
           </Link>
           
         </ul>
