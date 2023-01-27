@@ -29,7 +29,7 @@ import React, { useState } from 'react';
   
       if (firstName && lastName && phone && email && address && message) {
         const res = fetch(
-          "https://complaint-52a4e-default-rtdb.firebaseio.com/complaint.json",
+          "https://next-bd518-default-rtdb.firebaseio.com/complaint.json",
           {
             method: "POST",
             headers: {
