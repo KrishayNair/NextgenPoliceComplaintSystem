@@ -3,9 +3,9 @@ import { ConnectWallet } from "@thirdweb-dev/react";
 import Link from 'next/link';
 import Button from 'react-bootstrap/Button';
 import styles from "./Header.module.css"
-const Header = () => {
+const Header2 = () => {
     return (
-        <div className={styles.headerContainer}>
+        <div className={styles.headerContainer2}>
             
             <img className={styles.headerLogo} src="/logobg.png" alt="" />
             <nav>
@@ -35,4 +35,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Header2
