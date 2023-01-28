@@ -19,32 +19,24 @@ function About() {
         <img className={styles.imageLeft} src="/complaint.jpeg" />
         </div>
         <h1 className={styles.footerHeading}> Our Team</h1>
-        {/* <div className={styles.teamDiv}>
+        <div className={styles.teamDiv}>
         <div className={styles.element}>
-          <h1 className={styles.divHeading}>Secure and immutable record-keeping</h1>
-          <p className={styles.divContent}>The blockchain provides a secure and tamper-proof way to store and track complaints and related information. This could help to ensure that records are accurate and cannot be altered or deleted.</p>
+          <h1 className={styles.divHeading}>Krishay <br/>Nair</h1>
+          <img src="/krishay.jpeg" />
         </div>
         <div className={styles.element}>
-        <h1 className={styles.divHeading}>Smart contracts</h1>
-          <p className={styles.divContent}>Smart contracts could be used to automate certain aspects of the complaint process, such as triggering an investigation when certain criteria are met or notifying individuals when their complaints have been resolved.</p>
+        <h1 className={styles.divHeading}>Shantanu Gondane</h1>
+        <img src="/shantanu.jpeg" />
         </div>
         <div className={styles.element}>
-        <h1 className={styles.divHeading}>Online access</h1>
-          <p className={styles.divContent}>A police complaint system on the blockchain would likely provide online access to individuals, allowing them to file and track complaints and view related information from any device with an internet connection.</p>
+        <h1 className={styles.divHeading}>Priyanshu <br/>Naik</h1>
+        <img src="/priyanshu.jpeg" />
         </div>
         <div className={styles.element}>
-        <h1 className={styles.divHeading}>Tracking and reporting</h1>
-          <p className={styles.divContent}> The system could include features for tracking the progress of complaints and generating reports on complaint trends and resolutions.</p>
+        <h1 className={styles.divHeading}>Kartik <br/>Mistry</h1>
+        <img src="/kartik.jpeg" />
         </div>
-        <div className={styles.element}>
-        <h1 className={styles.divHeading}>Encrypted messaging</h1>
-          <p className={styles.divContent}> A police complaint system on the blockchain could include encrypted messaging capabilities, allowing individuals to communicate with investigators and other authorities securely.</p>
-        </div>
-        <div className={styles.element}>
-        <h1 className={styles.divHeading}>User authentication</h1>
-          <p className={styles.divContent}>To ensure the integrity of the system, it may include measures for verifying the identity of individuals who file complaints and access the system.</p>
-        </div>
-      </div> */}
+      </div>
       </div>
       
     </div>

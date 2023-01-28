@@ -65,7 +65,7 @@
   margin-top: 6rem;
 }
 .element {
-  width: 25rem;
+  width: 20rem;
   color: #fff;
   font-family: "Poppins";
   background-color: #532cad;
@@ -75,4 +75,7 @@
   margin-bottom: 4rem;
   border-radius: 12px;
   border-image: linear-gradient(#532cad, #69e1f9) 30;
+}
+.element:hover {
+  border-image: linear-gradient(#69e1f9, #532cad) 30;
 }
