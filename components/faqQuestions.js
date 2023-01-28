@@ -18,7 +18,7 @@ const FaqSection = () => {
     >
       <h2 className={styles.mainHeading}>Frequently asked Questions ( FAQ )</h2>
       <AnimateSharedLayout>
-        <Toggle title="What is Next gen Police Complaint system?">
+        <Toggle title="What is Next gen Police Complaint system?  ⬇️">
           <div className="answer">
             <p className={styles.answers}>
               In a Next Gen police complaint system using blockchain technology,
@@ -31,7 +31,7 @@ const FaqSection = () => {
             </p>
           </div>
         </Toggle>
-        <Toggle title="How does the website work??">
+        <Toggle title="How does the website work? ⬇️">
           <div className="answer">
             <p className={styles.answers}>
               The specific details of how a police complaint system using
@@ -61,7 +61,7 @@ const FaqSection = () => {
             </p>
           </div>
         </Toggle>
-        <Toggle title="Uses of the website">
+        <Toggle title="Uses of the website ⬇️">
           <div className="answer">
             <p className={styles.answers}>
               There are several potential uses for blockchain technology in a
@@ -92,7 +92,7 @@ const FaqSection = () => {
             </p>
           </div>
         </Toggle>
-        <Toggle title="Why is the above technology more efficient?">
+        <Toggle title="Why is the above technology more efficient? ⬇️">
           <div className="answer">
             <p className={styles.answers}>
               There are several potential reasons why a police complaint system
