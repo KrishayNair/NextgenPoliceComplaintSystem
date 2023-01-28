@@ -1,7 +1,7 @@
 .main{
     background-color: black;
     width: 100%;
-    padding-bottom: 60rem;
+    padding-bottom: 10rem;
 }
 .contact{
     position: relative;
@@ -36,7 +36,7 @@
     color: white;
 }
 .tick{
-    counter: white;
+    color: white;
 }
 .submit{
     
@@ -48,6 +48,7 @@
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
+        margin-left: 20rem;
       
 }
 .submit:hover {
@@ -55,4 +56,51 @@
   }
 .banner{
     width: 100%;
+}
+.box
+{
+    
+    margin-top: 20px;
+    margin-left: 120px;
+
+}
+.row{
+    
+}
+.context{
+    margin-top: 60px;
+    width: 50%;
+}
+.con{
+    position: relative;
+    margin-top: 60px;
+    left: 7.5rem;
+    bottom: 2rem;
+}
+.con2{
+    position: relative;
+    margin-top: 60px;
+    left: 7.5rem;
+    bottom: 3.5rem;
+}
+.inputaddress
+{
+    height: 6rem;
+    width: 33rem;
+    border-radius: 12px;
+}
+.inputaddress2
+{
+    height: 6rem;
+    width: 33rem;
+    border-radius: 12px;
+}
+.contactimage
+{
+    float: left;
+    display: inline-block;
+    position: relative;
+    top: 4rem;
+    width: 120rem;
+    right: 10rem;
 }

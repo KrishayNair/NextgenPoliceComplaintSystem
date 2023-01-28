@@ -75,21 +75,25 @@ import Header2 from '../components/Header2';
                     This site shall lodge the online complaint. Your complaint shall be referred to the concerned Police Station, where you may be called for further clarification and/or to give statement.
                     </p> */}
       </div>
+      <div className={styles.illus}>
+      
+      </div>
         <section className="contactus-section">
           <div className="container">
             <div className="row">
               <div className="col-12 col-lg-10 mx-auto">
                 <div className="row">
                   <div className="contact-leftside col-12 col-lg-5">
+                      <img className={styles.contactimage} src="/contact2.png" alt="" />
                     <figure>
                     </figure>
                   </div>
   
                   {/* right side contact form  */}
-                  <div className="contact-rightside col-12 col-lg-7">
+                  <div className={styles.context}>
                     <form method="POST">
                       <div className="row">
-                        <div className="col-12 col-lg-6 contact-input-feild">
+                        <div className={styles.box}>
                           <input
                             type="text"
                             name="firstName"
@@ -100,7 +104,7 @@ import Header2 from '../components/Header2';
                             onChange={postUserData}
                           />
                         </div>
-                        <div className="col-12 col-lg-6 contact-input-feild">
+                        <div className={styles.box}>
                           <input
                             type="text"
                             name="lastName"
@@ -113,7 +117,7 @@ import Header2 from '../components/Header2';
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-12 col-lg-6 contact-input-feild">
+                        <div className={styles.box}>
                           <input
                             type="text"
                             name="phone"
@@ -124,7 +128,7 @@ import Header2 from '../components/Header2';
                             onChange={postUserData}
                           />
                         </div>
-                        <div className="col-12 col-lg-6 contact-input-feild">
+                        <div className={styles.box}>
                           <input
                             type="text"
                             name="email"
@@ -137,12 +141,13 @@ import Header2 from '../components/Header2';
                         </div>
                       </div>
                       <div className="row">
+                        <div className={styles.con}>
                         <div className="col-12 contact-input-feild">
                           <input
                             type="text"
                             name="address"
                             id=""
-                            className="form-control"
+                            className={styles.inputaddress}
                             placeholder="Add Address"
                             value={userData.address}
                             onChange={postUserData}
@@ -151,18 +156,24 @@ import Header2 from '../components/Header2';
                       </div>
   
                       <div className="row">
+                        <div className={styles.con2}>
                         <div className="col-12 ">
                           <input
                             type="text"
                             name="message"
                             id=""
-                            className="form-control"
+                            className={styles.inputaddress2}
                             placeholder="Enter Your Message"
                             value={userData.message}
                             onChange={postUserData}
+
                           />
                         </div>
+                        </div>
+                        </div>
                       </div>
+{/*                       
+                      
                       <div class="form-check form-checkbox-style">
                         <input
                           class="form-check-input"
@@ -176,7 +187,7 @@ import Header2 from '../components/Header2';
                           I agree that the police department may contact me at the
                           email address or phone number above
                         </label>
-                      </div>
+                      </div> */}
   
                       <button
                         type="submit"
@@ -184,6 +195,7 @@ import Header2 from '../components/Header2';
                         onClick={submitData}>
                         Submit
                       </button>
+                     
                     </form>
                   </div>
                 </div>
