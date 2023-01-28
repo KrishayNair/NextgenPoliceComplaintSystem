@@ -1,7 +1,7 @@
-
-import Header from '/components/Header'
 import styles from "./contact.module.css"
 import React, { useState } from 'react';
+import Header2 from '../components/Header2';
+
 
   const Contact = () => {
     
@@ -65,20 +65,22 @@ import React, { useState } from 'react';
     };
   
     return (
-      <>
-      <Header/>
+      <div className={styles.main}>
+      <Header2/>
+      <img className={styles.banner} src="/contactus.png" />
+      {/* <h1 className={styles.contact}>CONTACT US</h1>
+      <hr className={styles.line}/> */}
+      <div>
+      {/* <p className={styles.main_para}>
+                    This site shall lodge the online complaint. Your complaint shall be referred to the concerned Police Station, where you may be called for further clarification and/or to give statement.
+                    </p> */}
+      </div>
         <section className="contactus-section">
           <div className="container">
             <div className="row">
               <div className="col-12 col-lg-10 mx-auto">
                 <div className="row">
                   <div className="contact-leftside col-12 col-lg-5">
-                    <h1 className="main-heading fw-bold">
-                      CONTACT US
-                    </h1>
-                    <p className="main-hero-para">
-                    This site shall lodge the online complaint. Your complaint shall be referred to the concerned Police Station, where you may be called for further clarification and/or to give statement.
-                    </p>
                     <figure>
                     </figure>
                   </div>
@@ -170,7 +172,7 @@ import React, { useState } from 'react';
                         />
                         <label
                           class="form-check-label"
-                          className="main-hero-para">
+                          className={styles.tick}>
                           I agree that the police department may contact me at the
                           email address or phone number above
                         </label>
@@ -178,7 +180,7 @@ import React, { useState } from 'react';
   
                       <button
                         type="submit"
-                        className="btn btn-style w-100"
+                        className={styles.submit}
                         onClick={submitData}>
                         Submit
                       </button>
@@ -189,7 +191,7 @@ import React, { useState } from 'react';
             </div>
           </div>
         </section>
-      </>
+      </div>
     );
   };
   
