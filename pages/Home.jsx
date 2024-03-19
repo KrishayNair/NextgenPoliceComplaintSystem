@@ -7,10 +7,10 @@ import Header from "/components/Header";
 import Status from "/components/Status";
 import styles from "./index.module.css";
 import Features from "/components/features";
-import FaqQuestions from "/components/faqQuestions";
+// import FaqQuestions from "/components/faqQuestions";
 import { useAddress, useContract, useContractRead } from "@thirdweb-dev/react";
 
-export default function Home() {
+ function Home() {
   const address = useAddress();
 
   const { contract } = useContract(process.env.NEXT_PUBLIC_SMART_CONTRACT);
@@ -48,7 +48,7 @@ export default function Home() {
       </div>
       <Features />
       <div className={styles.faq}>
-        <FaqQuestions />
+        {/* <FaqQuestions /> */}
       </div>
       <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
       <df-messenger
@@ -60,3 +60,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Home
