@@ -2,7 +2,6 @@ import React from 'react'
 import { ConnectWallet } from "@thirdweb-dev/react";
 import Link from 'next/link';
 import Button from 'react-bootstrap/Button';
-import Aadhaar from "./Aadhaar"
 import styles from "./Header.module.css"
 const Header2 = () => {
     return (
@@ -30,7 +29,6 @@ const Header2 = () => {
           
         </ul>
       </nav>
-      <Aadhaar/>
             <ConnectWallet  accentColor='white' colorMode='light' />
         </div>
   

@@ -10,7 +10,7 @@ import Features from "/components/features";
 // import FaqQuestions from "/components/faqQuestions";
 import { useAddress, useContract, useContractRead } from "@thirdweb-dev/react";
 
- function Home() {
+export default function Home() {
   const address = useAddress();
 
   const { contract } = useContract(process.env.NEXT_PUBLIC_SMART_CONTRACT);
@@ -60,5 +60,3 @@ import { useAddress, useContract, useContractRead } from "@thirdweb-dev/react";
     </div>
   );
 }
-
-export default Home
