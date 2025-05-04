@@ -1,25 +1,35 @@
 .navElement {
-  margin: 1rem;
-
-  position: relative;
-  top: 0.5rem;
+  margin: 0 1rem;
+  text-decoration: none;
 }
 .headerContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem;
+  padding: 0.5rem 2rem;
   background: linear-gradient(90deg, #532cad 21.48%, #69e1f9 86.58%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 80px;
 }
 .headerContainer2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem;
+  padding: 0.5rem 2rem;
   background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 80px;
 }
 .headerLogo {
   width: 8rem;
   height: 4.5rem;
-  margin-left: 2rem;
+  position: relative;
 }
